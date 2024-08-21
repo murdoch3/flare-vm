@@ -319,10 +319,10 @@ if (-not $noChecks.IsPresent) {
 
     # Prompt user to remind them to take a snapshot
     Write-Host "[-] Have you taken a VM snapshot to ensure you can revert to pre-installation state? (Y/N): " -ForegroundColor Yellow -NoNewline
-    $response = Read-Host
-    if ($response -notin @("y","Y")) {
-        exit 1
-    }
+    #$response = Read-Host
+    #if ($response -notin @("y","Y")) {
+    #    exit 1
+    #}
 }
 
 if (-not $noPassword.IsPresent) {
