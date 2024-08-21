@@ -318,7 +318,7 @@ if (-not $noChecks.IsPresent) {
     Set-LocalUser -Name  "${Env:UserName}" -PasswordNeverExpires $true
 
     # Prompt user to remind them to take a snapshot
-    Write-Host "[-] Have you taken a VM snapshot to ensure you can revert to pre-installation state? (Y/N): " -ForegroundColor Yellow -NoNewline
+    Write-Host "[-] Have you taken a VM snapshot to ensure you can revert to pre-installation state? (Y/N): "
     #$response = Read-Host
     #if ($response -notin @("y","Y")) {
     #    exit 1
